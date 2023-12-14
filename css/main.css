@@ -1,0 +1,208 @@
+*, 
+*::after, 
+*::before { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+ 
+body { 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+} 
+ 
+.wrapper { 
+  background-color: #25284b;
+  max-width: 400px; 
+  display: flex; 
+  align-items: center; 
+  flex-direction: column; 
+  gap: 30px; 
+  border: 1px solid #000000; 
+  padding: 25px; 
+} 
+ 
+.wrapper > h2 { 
+  font-weight: 700; 
+  font-size: 28px; 
+  letter-spacing: 0.05vw; 
+  color: blue;
+} 
+ 
+h3 { 
+  font-size: 15px; 
+  font-weight: 700; 
+  letter-spacing: 0.03vw; 
+  color: blue;
+} 
+ 
+form { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: start; 
+  gap: 5px; 
+} 
+ 
+input[type="text"], 
+input[type="tel"] { 
+  width: 100%; 
+  height: 30px; 
+  padding-left: 15px; 
+  font-size: 17px;
+  color: blue;
+  font-family: sans-serif;
+} 
+ 
+label[for="dough"] { 
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  margin-block: 20px 10px; 
+} 
+ 
+label[for="dough"] > h3 { 
+  flex: 1; 
+} 
+
+#dough { 
+  flex: 1; 
+} 
+ 
+.pizza_size { 
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
+  margin-bottom: 30px;
+} 
+
+.pizza_size > label { 
+  width: 50px; 
+  height: 50px; 
+  border: 1px solid #ffffff; 
+  background-color: rgb(20, 20, 44);
+  color: aliceblue;
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 10px; 
+  transition: all 0.4s ease; 
+} 
+ 
+.pizza_size > input[name="size"] { 
+  position: absolute; 
+  top: 0; 
+  visibility: hidden; 
+} 
+ 
+input[name="size"]:checked + label { 
+  background-color: blue; 
+  transition: all 0.4s ease; 
+} 
+ 
+.on_pizza { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  padding-top: 15px;
+  margin-bottom: 20px; 
+  color: aliceblue;
+} 
+ 
+.add_pizza { 
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  color: aliceblue; 
+  margin-bottom: 20px; 
+} 
+.add_pizza > label:hover { 
+  font-size: 16px; 
+  transition: all 0.2s ease-in; 
+} 
+#formBtn { 
+  width: 50%; 
+  padding: 5px 0; 
+  border-radius: 5px; 
+  align-self: center; 
+} 
+#formBtn:hover { 
+  background-color: blue; 
+  color: aliceblue; 
+  transition: all 0.3s ease-in-out; 
+} 
+ 
+section { 
+  padding-block: 50px; 
+  overflow-x: hidden; 
+  width: 100%; 
+  height: 100vh; 
+  background-color: aliceblue; 
+  display: none; 
+  align-items: start; 
+  justify-content: center; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+} 
+ 
+.order { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px; 
+} 
+ 
+#closeBtn { 
+  border: 1px solid aliceblue;
+  position: absolute; 
+  top: 50px; 
+  right: 50px; 
+  padding: 12px; 
+} 
+ 
+.user__order-modal { 
+  max-width: 400px; 
+  padding: 10px 20px; 
+  border: 1px solid; 
+} 
+ 
+.user__order-modal h1 { 
+  font-size: 24px; 
+} 
+ 
+.user__info { 
+  margin-top: 15px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 5px; 
+} 
+ 
+.pizza__info { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 5; 
+} 
+ 
+.order h2 { 
+  font-size: 18px; 
+} 
+ 
+.order h2 span { 
+  font-size: 16px; 
+  font-weight: 500; 
+} 
+ 
+hr { 
+  margin-block: 15px; 
+} 
+#closeBtn:hover{ 
+    background-color: blue; 
+    color: aliceblue;  
+    transition: all 0.3s ease-in-out; 
+}
